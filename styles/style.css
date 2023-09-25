@@ -6,7 +6,7 @@
   grid-template-columns: 4fr 0.9fr 4fr;
 }
 
-.navigation-element {
+.header__links-list {
   display: flex;
   align-items: center;
 }
@@ -17,40 +17,42 @@
   gap: 26px;
 }
 
-.main-link {
-  text-decoration: none;
-}
-
-.main-link-li {
+.header__links-list-item,
+.header__links-list-item_no-bullit {
   display: list-item;
   list-style-type: none;
 }
 
-.about-link-li,
-.lots-link-li {
-  display: list-item;
-  list-style-type: circle;
+.header__link_active,
+.header__link {
+  text-decoration: none;
+  color: #000;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.lots-link,
-.about-link {
-  text-decoration: none;
+.header__link {
+  display: list-item;
+  list-style-type: circle;
   border-bottom: 1px solid black;
 }
 
-.logo-wrapper {
+.header__logo {
   display: grid;
   align-content: start;
   width: 124px;
   height: 95px;
 }
 
-.logo-element {
+.header__logo-image {
   display: block;
   align-content: start;
 }
 
-.contacts-element-wrapper {
+.header__address {
   display: flex;
   align-items: center;
   justify-content: end;
@@ -62,6 +64,12 @@
   align-items: flex-start;
   font-style: normal;
   line-height: 23px;
+  color: #000;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.3px;
 }
 
 .mail-address,
@@ -348,7 +356,7 @@ footer {
   border-bottom: none;
 }
 
-.footer__social-list{
+.footer__social-list {
   list-style-type: none;
   display: flex;
   width: 240px;
