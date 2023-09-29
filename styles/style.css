@@ -27,7 +27,7 @@
 .header__link {
   text-decoration: none;
   color: #000;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -46,7 +46,7 @@
 .header__logo {
   display: grid;
   align-content: start;
-  width: 148x;
+  width: 138px;
   height: 105px;
 }
 
@@ -62,13 +62,14 @@
 }
 
 .contacts-element {
+  width: 240px;
   padding-right: 3px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   font-style: normal;
   color: #000;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -95,6 +96,7 @@
 .cover {
   background-image: url(../images/cover.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .overlay {
@@ -119,7 +121,7 @@
 .aligned-text_center,
 .aligned-text {
   color: #fff;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
@@ -137,9 +139,8 @@
   line-height: 100%;
   text-align: center;
   grid-area: center;
-  width: 1280px;
   margin: 0px 95px 0px 65px;
-  justify-self: start;
+  justify-self: center;
 }
 
 .aligned-text_right {
@@ -168,7 +169,7 @@
 .cover__description-text {
   color: #fff;
   text-align: center;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -181,7 +182,7 @@
   display: flex;
   align-items: center;
   justify-content: end;
-  letter-spacing: 0.9;
+  letter-spacing: 0px;
   word-spacing: 17px;
 }
 
@@ -205,7 +206,7 @@
   margin-left: 40px;
   margin-bottom: 27px;
   color: #000;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -246,22 +247,22 @@
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 .card__title {
   color: #fff;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -273,7 +274,7 @@
 
 .card__text {
   color: #fff;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -283,7 +284,7 @@
 
 .lots__look-more-link {
   color: #000;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -323,7 +324,6 @@
 так как это класс, относящийся к логотипу */
 
 .about__logo-image {
-  background-image: url(../images/logo-white.svg);
   display: grid;
   width: 148px;
   height: 114px;
@@ -333,28 +333,24 @@
 
 .about__title-and-text-wrapper {
   margin: 101px 0px 0px 25px;
+  display: grid;
+  row-gap: 30px;
 }
 
 .about__title {
   color: #000;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
-
-.about__text-top {
-  margin-bottom: 30px;
-  line-height: 23px;
-}
-
 
 .about__text {
   color: #000;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -382,7 +378,7 @@ footer {
   align-self: center;
   color: #000;
   text-align: center;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -403,6 +399,9 @@ footer {
 .footer__social-list {
   list-style-type: none;
   display: flex;
-  width: 240px;
   gap: 48px;
+}
+
+.footer__social-list-item-logo{
+  width: 48px;
 }
